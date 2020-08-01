@@ -41,7 +41,7 @@ VALUES('Sumsang b50','hape keren dari merek sumsang',4000000,100,1),
  SELECT id,name,email FROM users;
  SELECT price FROM items WHERE price > 1000000;
  SELECT * FROM items WHERE name LIKE '%uniklo%';
- SELECT items.name,description.items,price.items,stock.items,category_id.items,name.categories AS kategori
+ SELECT items.name,items.description,items.price,items.stock,items.category_id,categories.name AS kategori
  FROM items INNER JOIN categories ON items.category_id=categories.id;
 
 
